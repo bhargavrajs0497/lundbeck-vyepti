@@ -1250,6 +1250,7 @@ function buildForm(apiEndpoint) {
     try {
       const response = await fetch(apiEndpoint, {
         method: 'POST',
+        credentials: 'include',
         body: formData,
       });
 
